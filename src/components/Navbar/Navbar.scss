@@ -1,0 +1,24 @@
+@import "scss/vars";
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 1rem;
+  border-right: $border;
+
+  .link {
+    color: $gray;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-right: 1rem;
+
+    &.active {
+      text-decoration: underline;
+      color: $black;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

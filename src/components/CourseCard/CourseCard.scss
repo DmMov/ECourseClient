@@ -1,0 +1,27 @@
+@import "scss/vars";
+
+.courseCard {
+  $this: &;
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border: $border;
+  border-radius: 2px;
+  overflow: hidden;
+
+  &__imageContainer {
+    height: 8rem;
+  }
+
+  &__infoWrap {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-gap: .5rem;
+    padding: 1rem;
+
+    #{$this}__description {
+      font-size: .85rem;
+      color: $gray;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import "scss/vars";
+
+.confirmEmailPage {
+  display: grid;
+  justify-items: center;
+  border-top: $border;
+
+  .successMessage {
+    display: grid;
+    grid-gap: 1rem;
+    justify-items: center;
+    padding: 2rem 3rem;
+    border: $border;
+    border-radius: 2px;
+
+    &__icon {
+      font-size: 3rem;
+      color: #82CE34;
+    }
+
+    &__title {
+      margin: 0;
+      color: $gray;
+      font-size: 2rem;
+      text-transform: capitalize;
+    }
+
+    &__text {
+      color: $gray;
+
+      &::first-letter {
+        text-transform: capitalize;
+      }
+    }
+  }
+}

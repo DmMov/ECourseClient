@@ -1,0 +1,67 @@
+@import "scss/vars";
+
+.uploadField {
+  $this: &;
+
+  display: grid;
+  color: $gray;
+
+  &__error {
+    color: $error;
+
+    &::first-letter {
+      text-transform: capitalize;
+    }
+
+    & ~ #{$this}__upload {
+      #{$this}__btn {
+        border-color: $error;
+        color: $error;
+      }
+    }
+  }
+
+  &__upload {
+    #{$this}__control {
+      display: none;
+    }
+
+    #{$this}__btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px dashed darken($light, 10%);
+      margin: 0;
+      font-size: .85rem;
+      text-transform: capitalize;
+      padding: .3rem .75rem;
+
+      #{$this}__uploadIcon {
+        font-size: .9rem;
+        margin-right: .25rem;
+      }
+
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+
+  &__uploadedImageContainer {
+    border: 1px dashed darken($light, 10%);
+    padding: .5rem;
+    margin: 0 auto;
+    width: 10rem;
+    height: 10rem;
+
+    &, .image {
+      border-radius: 50%;
+    }
+  }
+
+  &__fileName, &__error {
+    font-size: .75rem;
+    text-align: center;
+    padding: .25rem;
+  }
+}

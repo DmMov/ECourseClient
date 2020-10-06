@@ -1,0 +1,34 @@
+@import "scss/vars";
+
+.field {
+  $this: &;
+
+  display: grid;
+  grid-gap: .25rem;
+
+  &.error {
+    #{$this}__label {
+      color: $error;
+    }
+
+    #{$this}__control {
+      border-color: $error;
+    }
+  }
+
+  &__label {
+    text-transform: capitalize;
+    font-size: .75rem;
+    font-weight: 600;
+    color: $gray;
+  }
+
+  &__error {
+    font-size: .7rem;
+    color: $error;
+
+    &::first-letter {
+      text-transform: capitalize;
+    }
+  }
+}

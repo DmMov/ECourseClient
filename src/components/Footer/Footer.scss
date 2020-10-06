@@ -1,0 +1,46 @@
+@import "scss/vars";
+
+.footer {
+  display: grid;
+  grid-gap: 1rem;
+  justify-items: center;
+  align-self: end;
+  padding: 2rem;
+  background-color: $black;
+  color: $gray;
+
+  &__menu {
+    display: flex;
+    align-items: center;
+
+    .lineIcon {
+      font-size: .3rem;
+      margin: .25rem;
+    }
+
+    .link {
+      color: inherit;
+    }
+  }
+
+  &__copyright {
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+
+    .icon {
+      font-size: 1rem;
+      margin-right: .15rem;
+    }
+
+    .year, .eCourse, .allRights {
+      margin-left: .25rem;
+    }
+
+    .eCourse {
+      text-transform: capitalize;
+      color: $primary;
+      font-weight: 500;
+    }
+  }
+}

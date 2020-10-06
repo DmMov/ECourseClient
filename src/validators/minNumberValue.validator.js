@@ -1,0 +1,1 @@
+export const minNumberValue = minValue => value => parseInt(value, 10) >= minValue;

@@ -1,0 +1,15 @@
+@import "scss/vars";
+
+.registerForm {
+  max-width: 20rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+
+  .fakeLabel {
+    text-transform: capitalize;
+    font-size: .75rem;
+    font-weight: 600;
+    color: $gray;
+    margin-bottom: -.75rem;
+  }
+}

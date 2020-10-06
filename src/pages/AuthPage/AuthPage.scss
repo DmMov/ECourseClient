@@ -1,0 +1,13 @@
+.authPage {
+  .toggleFormBtnWrap {
+    display: grid;
+    justify-content: end;
+    padding: 0 0 1rem;
+    max-width: 20rem;
+    margin: 0 auto;
+
+    .toggleFormBtn {
+      text-transform: capitalize;
+    }
+  }
+}

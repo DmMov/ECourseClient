@@ -1,0 +1,29 @@
+@import "scss/vars";
+@import "scss/mixins";
+
+.form {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+  justify-self: center;
+  position: relative;
+  border: $border;
+  border-radius: 2px;
+
+  &__title {
+    text-transform: capitalize;
+    text-align: center;
+    position: relative;
+    margin: 0;
+  }
+
+  &__submitBtn {
+    justify-self: center;
+    text-transform: capitalize;
+  }
+
+  .spinner {
+    @include stretch(absolute);
+    background-color: rgba(#ffffff, .5);
+  }
+}
