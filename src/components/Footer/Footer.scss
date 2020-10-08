@@ -9,20 +9,6 @@
   background-color: $black;
   color: $gray;
 
-  &__menu {
-    display: flex;
-    align-items: center;
-
-    .lineIcon {
-      font-size: .3rem;
-      margin: .25rem;
-    }
-
-    .link {
-      color: inherit;
-    }
-  }
-
   &__copyright {
     display: flex;
     align-items: center;
